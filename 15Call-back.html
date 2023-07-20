@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+ 
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore labore eaque molestias dignissimos repellendus dicta qui ea beatae quod dolore animi eum, illo optio autem voluptatum commodi, facere non velit!
+    </p>
+
+    <button>hide</button>
+
+    <script>
+
+        $("button").click(()=>{
+            $("p").hide("slow",()=>{
+                alert("paragraph is hidden...")
+            })
+        })
+    </script>
+</body>
+</html>

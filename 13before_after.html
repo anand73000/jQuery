@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <p id="p1">This is paragraph tag </p>
+    <p id="p2">This is paragraph tag </p>
+  
+     <ol>
+      <li>List item </li>
+      <li>List item </li>
+      <li>List item </li>
+      <li>List item </li>
+     </ol>
+  
+     <button id="b1">before text</button>
+     <button id="b2">before list </button>
+     <button id="b3">after text </button>
+     <button id="b4">after list </button>
+
+
+     <script>
+        $("#b1").click(()=>{
+            $("p").before("<b>before text</b>")
+        })
+
+        $("#b2").click(()=>{
+            $("li").before("<b>before list</b>")
+        })
+
+        $("#b3").click(()=>{
+            $("p").after("<b>before text</b>")
+        })
+
+        $("#b4").click(()=>{
+            $("li").after("<b>before list</b>")
+        })
+     </script>
+</body>
+</html>

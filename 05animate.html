@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div 
+        {
+            height: 100px;
+            width: 100px;
+            background: gray;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="b1">animate</button>
+    <button id="b2">restore animate</button>
+    <div>
+        Hello
+    </div>
+   
+
+    <script>
+
+        $("#b1").click(function (){
+            $("div").animate({"left":"200px","font-size":"30px"})
+        })
+
+        $("#b2").click(function (){
+            $("div").animate({"left":"0","font-size":"15px"})
+        })
+
+
+    </script>
+</body>
+</html>

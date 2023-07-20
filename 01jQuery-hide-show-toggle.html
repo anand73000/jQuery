@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+        <p id="p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam adipisci veniam impedit error ea sed numquam dolore! Vitae accusantium asperiores quia magnam in! Magnam modi odit a non eius odio?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nobis quibusdam esse velit nemo modi blanditiis. Numquam corporis facilis iste. Fuga repellendus recusandae ut perspiciatis assumenda, optio cum tempore neque.
+        </p>
+        <button id="b1">hide</button>
+        <button id="b2">show</button>
+        <button id="b3">hide & show</button>
+
+        <script>
+            //  p = document.getElementById("p")
+            //  b1 = document.querySelector("#b1")
+            //  b2 = document.querySelector("#b2")
+            //  b3 = document.querySelector("#b3")
+
+             // $('.className').method()/.attr;
+            // $('#idName').method()/.attr;
+            // $("tagName").method()/.attr;
+
+            p = $('p')
+   
+            b1 = $('#b1')
+            b2 = $('#b2')
+            b3 = $('#b3')
+
+            $('#b1').click(function test(){
+                p.hide(1000);
+            })
+            
+            b2.click(()=>{
+                p.show(1000);
+            })
+
+            b3.click(()=>{
+                p.toggle();
+            })
+
+            // p.mouseenter(()=>{
+            //     p.hide();
+            // })
+            
+        </script>
+</body>
+</html>

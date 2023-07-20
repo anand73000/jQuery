@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        .main 
+        {
+            height: 100px;
+            width: 200px;
+            background-color: yellow;
+            color: red;
+            border: 2px solid black ;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nobis molestiae </p>
+    </div>
+    <button id="b1">remove</button>
+    <button id="b2">empty</button>
+
+    <script>
+        $("#b1").click(()=>{
+            $("div").remove()
+        })
+
+        $("#b2").click(()=>{
+            $("div").empty()
+        })
+    </script>
+</body>
+</html>
